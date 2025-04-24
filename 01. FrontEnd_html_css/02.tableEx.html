@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style태그는 <head>태그에 두는게 좋음. -->
+        <!-- DOM이 먼저 렌더링 된 후 스타일이 적용되면 화면이 깜빡거릴지도... -->
+         <!-- 스타일이 많아지면 CSS파일로 따로 분리해서 <link>로 연결하자. -->
+    <style>
+        table, thead, td {
+            border: 1px solid gray;
+            border-collapse: collapse;
+
+        }
+        th, td {
+            width: 100px;
+            padding: 5px;
+        }
+        caption {
+            font-size: 20px;
+            margin: 10px;
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <table>
+        <caption>주요 SNS 서비스별 이용률(%)</caption>
+        <th>
+            <td>페이스북</td><td>카카오스토리</td><td>밴드</td><td>인스타그램</td><td>트위터</td>
+        </th>
+        <tr>
+            <td>2015년</td><td>77.1</td><td>58.3</td><td>32.4</td><td>16.7</td><td>22.1</td>
+        </tr>
+        <tr>
+            <td>2016년</td><td>73.8</td><td>51.0</td><td>40.1</td><td>28.1</td><td>14.7</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
